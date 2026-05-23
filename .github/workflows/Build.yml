@@ -48,7 +48,7 @@ jobs:
 
       - name: Build Windows EXE
         run: |
-         haxelib run lime test windows
+         haxelib run lime build windows
 
       - name: Upload EXE
         uses: actions/upload-artifact@v4
