@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <project>
-	<!-- Project Attributes -->
-	<meta title="My Flixel Game" package="com.example.myflixelgame" version="1.0.0" company="MyCompany" />
 
-	<!-- Window Settings -->
-	<window width="640" height="480" fps="60" background="#000000" hardware="true" vsync="true" />
+	<meta
+		title="My Flixel Game"
+		package="com.example.myflixelgame"
+		version="1.0.0"
+		company="MyCompany"
+	/>
 
-	<!-- Source Paths -->
+	<app main="Main" file="MyFlixelGame" path="export" />
+
+	<window
+		width="1280"
+		height="720"
+		fps="60"
+		background="#000000"
+		hardware="true"
+		vsync="true"
+	/>
+
 	<source path="source" />
-
-	<!-- Libraries -->
 	<haxelib name="flixel" />
 	<haxelib name="flixel-ui" />
 	<haxelib name="flixel-addons" />
-	<haxelib name="flixel-tools" />
+
 </project>
