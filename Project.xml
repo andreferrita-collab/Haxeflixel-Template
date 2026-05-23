@@ -14,7 +14,4 @@
 	<haxelib name="flixel-ui" />
 	<haxelib name="flixel-addons" />
 	<haxelib name="flixel-tools" />
-
-	<!-- Assets -->
-	<assets path="assets" />
 </project>
