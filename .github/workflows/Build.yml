@@ -26,8 +26,8 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            C:\Users\runneradmin\AppData\Roaming\haxelib
-            export\release\windows
+            C:\Users\runneradmin\haxelib/
+            C:\Users\runneradmin\.Lime
           key: ${{ runner.os }}-haxe-${{ hashFiles('**/*.hxml') }}
           restore-keys: |
             ${{ runner.os }}-haxe-
