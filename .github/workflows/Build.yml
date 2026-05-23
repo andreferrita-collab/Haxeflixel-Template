@@ -22,15 +22,17 @@ jobs:
         run: |
           cd ~/haxelib
 
-      - name: Setup cache
+      - name: Cache Windows Build
         uses: actions/cache@v4
         with:
           path: |
-            C:\Users\runneradmin\haxelib/
-            C:\Users\runneradmin\.Lime
-          key: ${{ runner.os }}-haxe-${{ hashFiles('**/*.hxml') }}
+            C:\Users\runneradmin\haxelib
+            C:\Users\runneradmin\.lime
+            export
+          key: windows-${{ runner.os }}-haxe4.2.5-${{ hashFiles('**/Project.xml', '**/*.hxml', '**/haxelib.json') }}
           restore-keys: |
-            ${{ runner.os }}-haxe-
+            windows-${{ runner.os }}-haxe4.2.5-
+            windows-${{ runner.os }}-
 
       - name: Install dependencies
         run: |
